@@ -1,0 +1,39 @@
+file,type,function,line,message
+examples\bad_code.py,Too Many Parameters,process_student_data,1,Function 'process_student_data' has 7 parameters.
+examples\bad_code.py,Magic Number,,4,Magic number detected: 10
+examples\bad_code.py,Magic Number,,5,Magic number detected: 50
+examples\bad_code.py,Magic Number,,9,Magic number detected: 3.14
+examples\bad_code.py,Broad Exception,,13,Broad exception handler detected: except Exception.
+examples\bad_code.py,Deep Nesting,process_student_data,1,Function 'process_student_data' has nesting depth 5.
+examples\clean_code.py,Magic Number,,1,Magic number detected: 50
+examples\long_method_code.py,Long Method,long_function_example,1,Function 'long_function_example' has 34 lines.
+examples\long_method_code.py,Magic Number,,4,Magic number detected: 2
+examples\long_method_code.py,Magic Number,,5,Magic number detected: 3
+examples\long_method_code.py,Magic Number,,6,Magic number detected: 4
+examples\long_method_code.py,Magic Number,,7,Magic number detected: 5
+examples\long_method_code.py,Magic Number,,8,Magic number detected: 6
+examples\long_method_code.py,Magic Number,,9,Magic number detected: 7
+examples\long_method_code.py,Magic Number,,10,Magic number detected: 8
+examples\long_method_code.py,Magic Number,,11,Magic number detected: 9
+examples\long_method_code.py,Magic Number,,12,Magic number detected: 10
+examples\long_method_code.py,Magic Number,,13,Magic number detected: 11
+examples\long_method_code.py,Magic Number,,14,Magic number detected: 12
+examples\long_method_code.py,Magic Number,,15,Magic number detected: 13
+examples\long_method_code.py,Magic Number,,16,Magic number detected: 14
+examples\long_method_code.py,Magic Number,,17,Magic number detected: 15
+examples\long_method_code.py,Magic Number,,18,Magic number detected: 16
+examples\long_method_code.py,Magic Number,,19,Magic number detected: 17
+examples\long_method_code.py,Magic Number,,20,Magic number detected: 18
+examples\long_method_code.py,Magic Number,,21,Magic number detected: 19
+examples\long_method_code.py,Magic Number,,22,Magic number detected: 20
+examples\long_method_code.py,Magic Number,,23,Magic number detected: 21
+examples\long_method_code.py,Magic Number,,24,Magic number detected: 22
+examples\long_method_code.py,Magic Number,,25,Magic number detected: 23
+examples\long_method_code.py,Magic Number,,26,Magic number detected: 24
+examples\long_method_code.py,Magic Number,,27,Magic number detected: 25
+examples\long_method_code.py,Magic Number,,28,Magic number detected: 26
+examples\long_method_code.py,Magic Number,,29,Magic number detected: 27
+examples\long_method_code.py,Magic Number,,30,Magic number detected: 28
+examples\long_method_code.py,Magic Number,,31,Magic number detected: 29
+examples\long_method_code.py,Magic Number,,32,Magic number detected: 30
+examples\long_method_code.py,Magic Number,,33,Magic number detected: 31
