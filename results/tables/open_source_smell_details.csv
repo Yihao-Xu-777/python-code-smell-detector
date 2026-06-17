@@ -1,0 +1,5 @@
+project,file,type,function,line,message
+argparse-python-cli,evaluation_projects\argparse-python-cli\size.py,Magic Number,,6,Magic number detected: 1024
+argparse-python-cli,evaluation_projects\argparse-python-cli\size.py,Magic Number,,6,Magic number detected: 2
+basic-python-cli,evaluation_projects\basic-python-cli\size.py,Magic Number,,6,Magic number detected: 1024
+basic-python-cli,evaluation_projects\basic-python-cli\size.py,Magic Number,,6,Magic number detected: 2

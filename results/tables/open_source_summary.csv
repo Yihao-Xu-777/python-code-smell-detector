@@ -1,0 +1,4 @@
+project,files_analyzed,loc,total_smells,smells_per_kloc,long_method,too_many_parameters,deep_nesting,magic_number,broad_exception
+argparse-python-cli,1,16,2,125.0,0,0,0,2,0
+basic-python-cli,1,17,2,117.65,0,0,0,2,0
+python-cli-example,10,168,0,0.0,0,0,0,0,0

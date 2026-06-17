@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local evaluation projects
+evaluation_projects/*
+!evaluation_projects/README.md

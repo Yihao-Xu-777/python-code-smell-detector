@@ -129,7 +129,20 @@ Message: Function 'process_student_data' has nesting depth 4.
 
 ## Results
 
-The tool can generate a CSV report containing all detected code smells.
+This project produces two types of analysis results:
+
+1. Example-level results for the sample files in the `examples/` folder.
+2. Empirical evaluation results for several small open-source Python CLI projects.
+
+## Example File Analysis
+
+The tool can analyze local Python files and generate a CSV report containing all detected code smells.
+
+Example command:
+
+```bash
+python src/analyzer.py examples --csv results/tables/example_summary.csv
+```
 
 Example result file:
 
@@ -146,6 +159,52 @@ The CSV report includes:
 | function | The related function name    |
 | line     | The line number of the smell |
 | message  | The explanation of the smell |
+
+## Empirical Evaluation
+
+In V3, this tool was evaluated on three small open-source Python CLI projects placed in the `evaluation_projects/` folder.
+
+The evaluated projects are:
+
+| Project             | Description                                   |
+| ------------------- | --------------------------------------------- |
+| argparse-python-cli | A small Python CLI project using `argparse`   |
+| basic-python-cli    | A basic Python command-line interface example |
+| python-cli-example  | A small Python CLI example project            |
+
+The evaluation generated two CSV result files:
+
+```text
+results/tables/open_source_summary.csv
+results/tables/open_source_smell_details.csv
+```
+
+The project-level summary includes the number of analyzed files, lines of code, total detected smells, smells per KLOC, and counts for each smell type.
+
+The smell-level details include the project name, file path, smell type, related function, line number, and explanation message.
+
+### Result Figures
+
+#### Code Smell Distribution
+
+![Code Smell Distribution](results/figures/smell_distribution.png)
+
+#### Total Code Smells by Project
+
+![Total Code Smells by Project](results/figures/project_total_smells.png)
+
+#### Code Smell Density by Project
+
+![Code Smell Density by Project](results/figures/project_smell_density.png)
+
+### Interpretation
+
+The evaluated projects are small Python CLI example projects, so the total number of detected smells is relatively low. For example, `python-cli-example` had no detected smells under the current rule settings.
+
+The main purpose of this evaluation is to demonstrate a reproducible static analysis workflow, including project-level analysis, CSV result generation, and result visualization. Therefore, the results should be interpreted as a workflow demonstration rather than a strong conclusion about the overall quality of these projects.
+
+Since some projects have very few lines of code, the smell density value should also be interpreted carefully. A small number of detected smells may lead to a relatively high smells-per-KLOC value when the project size is small.
+
 
 ## Testing
 
